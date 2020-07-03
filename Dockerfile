@@ -1,5 +1,6 @@
 FROM litespeedtech/openlitespeed:latest
 COPY install.sh /usr/local/bin/
+COPY .htaccess /var/www/vhosts/localhost/html
 
 LABEL version="0.0.1"
 LABEL description="PHP/MySQL com Litespeed"
